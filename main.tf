@@ -10,7 +10,7 @@ terraform {
   }
 }
 
-data "aws_caller_identity" "current" {}
+data "aws_caller_identity" "current_user" {}
 
 locals {
   name_prefix = split("/", "${data.aws_caller_identity.current.arn}")[1]
