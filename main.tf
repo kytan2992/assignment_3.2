@@ -15,6 +15,8 @@ terraform {
       version = "~> 5.0"
     }
   }
+
+  required_version = ">= 1.11"
 }
 
 data "aws_caller_identity" "current_user" {}
